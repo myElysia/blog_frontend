@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.5.7",
     "@pinia/nuxt": "^0.5.4",
     "eslint": "^9.11.0",
     "eslint-config-prettier": "^9.1.0",
