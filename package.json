@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.7",
+    "@nuxtjs/i18n": "^8.5.5",
     "@pinia/nuxt": "^0.5.4",
     "eslint": "^9.11.0",
     "eslint-config-prettier": "^9.1.0",
@@ -23,8 +24,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.11.0",
+    "@formkit/auto-animate": "^0.8.2",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "eslint-plugin-vue": "^9.28.0",
     "globals": "^15.9.0",
+    "pinia-plugin-persistedstate": "^4.0.2",
     "typescript-eslint": "^8.6.0"
   }
 }
