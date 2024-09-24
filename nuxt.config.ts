@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'pinia-plugin-persistedstate',
     '@nuxtjs/mdc',
+    '@nuxtjs/tailwindcss',
   ],
   srcDir: 'src/',
   ssr: false,
