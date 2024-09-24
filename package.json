@@ -9,6 +9,17 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "husky": {
+    "hook": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,ts}": [
+      "eslint --fix",
+      "prettier --write ."
+    ]
+  },
   "dependencies": {
     "@nuxt/eslint": "^0.5.7",
     "@nuxtjs/i18n": "^8.5.5",
@@ -16,6 +27,8 @@
     "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
     "nuxt": "^3.13.2",
     "pinia": "^2.2.2",
     "prettier": "^3.3.3",
