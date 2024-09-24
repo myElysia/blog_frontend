@@ -1,17 +1,15 @@
 <script lang="ts">
 export default {
   name: 'DefaultLayouts',
-}
+};
 </script>
 <template>
-<div>
-  <NuxtLoadingIndicator />
-  <div class="header">
-
+  <div>
+    <NuxtLoadingIndicator />
+    <div class="header"></div>
+    <slot />
+    <div class="footer"></div>
   </div>
-  <slot />
-  <div class="footer"> </div>
-</div>
 </template>
 
 <style scoped>

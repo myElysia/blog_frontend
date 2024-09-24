@@ -1,8 +1,8 @@
 export interface Params extends PageParams {
-    filter?: object
+  filter?: object;
 }
 
 export interface PageParams {
-    page?: number;
-    size?: number;
+  page?: number;
+  size?: number;
 }
