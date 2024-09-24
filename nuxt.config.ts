@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     'pinia-plugin-persistedstate',
     '@nuxtjs/mdc',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/eslint-module',
   ],
   srcDir: 'src/',
   ssr: false,
