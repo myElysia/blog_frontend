@@ -46,5 +46,13 @@ export default defineNuxtConfig({
     },
     config: {},
     viewer: true,
+  },
+  mdc: {
+    components: {
+      map: {
+        pre: 'PreMD',
+        code: 'CodeMD'
+      }
+    }
   }
 });
