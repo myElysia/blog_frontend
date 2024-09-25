@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     'pinia-plugin-persistedstate',
     '@nuxtjs/mdc',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/eslint-module',
+    '@nuxt/ui',
+    '@nuxt/fonts',
+    'dayjs-nuxt'
   ],
   srcDir: 'src/',
   ssr: false,
@@ -34,4 +38,13 @@ export default defineNuxtConfig({
       },
     },
   },
+  tailwindcss: {
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
+    configPath: 'tailwind.config',
+    exposeConfig: {
+      level: 2
+    },
+    config: {},
+    viewer: true,
+  }
 });
