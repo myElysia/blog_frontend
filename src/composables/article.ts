@@ -35,12 +35,12 @@ export async function createArticle(body: Article): Promise<Article | null> {
   return data.value ? data.value.data : null;
 }
 
-export async function getParsedArticles(parseBody: Array<object>, language: string='txt'): Promise<Array<object>> {
-  parseBody.forEach((item) => {
+export const getParsedArticles = async (parseBody: Array<object>, language: string='txt'): Promise<Array<object>> => {
+  for (const item of parseBody) {
     if (item.tag === 'pre') {
       await getParsedArticles(item.children, item.language);
     } else if (item.tag === 'code') {
       item.props = { ...item.props, language };
     }
-  });
+  }
 }

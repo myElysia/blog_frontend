@@ -21,6 +21,7 @@
     ]
   },
   "dependencies": {
+    "@ant-design-vue/nuxt": "^1.4.2",
     "@nuxt/eslint": "^0.5.7",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/i18n": "^8.5.5",

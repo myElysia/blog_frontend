@@ -11,13 +11,14 @@ const { article, md5 } = defineProps({
     required: true,
   },
 });
+const linkPath = `/articles/${md5}`;
 </script>
 
 <template>
   <div class="article-card">
     <h2>{{ article.title }}</h2>
     <p>{{ article.content }}</p>
-    <NuxtLink :to="`/article/${md5}`">{{ article.title }}</NuxtLink>
+    <NuxtLink :to="linkPath">{{ article.title }}</NuxtLink>
   </div>
 </template>
 

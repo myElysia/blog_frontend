@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@nuxt/ui',
     '@nuxt/fonts',
-    'dayjs-nuxt'
+    'dayjs-nuxt',
+    '@ant-design-vue/nuxt'
   ],
   srcDir: 'src/',
   ssr: false,
