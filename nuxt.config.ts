@@ -35,8 +35,8 @@ export default defineNuxtConfig({
     routeRules: {
       '/api/**': {
         cors: true,
-        preset: 'vercel-edge',
-        proxy: 'https://blogbackend.shinestar.fun/api/*',
+        preset: 'vercel',
+        proxy: 'https://blogbackend.shinestar.fun/api/**',
         headers: {
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Headers': 'Content-Type, Authorization',
