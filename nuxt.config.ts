@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   nitro: {
     devProxy: {
       '/api': {
-        target: 'http://127.0.0.1:8080/api',
+        target: 'https://blogbackend.shinestar.fun/api',
         changeOrigin: true,
         prependPath: true,
       },
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     routeRules: {
       '/api/**': {
         cors: true,
-        proxy: 'https://blogbackend.shinestar.com/api/*',
+        proxy: 'https://blogbackend.shinestar.fun/api/*',
       },
     },
   },
