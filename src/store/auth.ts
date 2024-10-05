@@ -2,6 +2,7 @@ import { defineStore } from 'pinia';
 import { v4 as uuid } from 'uuid';
 
 export enum AuthStatus {
+  Waiting = 'Waiting',
   Running = 'Running',
   Redirecting = 'Redirecting',
   Authenticated = 'Authenticated',
@@ -11,11 +12,11 @@ export enum AuthStatus {
 export const authState = defineStore('authStore', {
   state: () => ({
     id: '',
-    status: '',
+    status: AuthStatus.Waiting,
   }),
   actions: {
     init() {
-      if (this.id === ''){ this.id = uuid(); }
+      if (this.id === '') { this.id = uuid(); }
     },
   },
 });

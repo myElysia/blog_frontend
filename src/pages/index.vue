@@ -19,6 +19,7 @@ export default {
 
 <template>
   <div class="container">
+    <button><NuxtLink to="/article/create">创建文章</NuxtLink></button>
     <ArticleCard
       v-for="(article, md5, index) in articleStore.article_cache"
       :key="index"

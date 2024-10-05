@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/fonts',
     'dayjs-nuxt',
-    '@ant-design-vue/nuxt'
+    '@ant-design-vue/nuxt',
   ],
   srcDir: 'src/',
   ssr: false,
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   nitro: {
     devProxy: {
       '/api': {
-        target: 'https://blogbackend.shinestar.fun/api',
+        target: 'https://blogapi.shinestar.fun/api',
         changeOrigin: true,
         prependPath: true,
       },
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
       '/api/**': {
         cors: true,
         preset: 'vercel',
-        proxy: 'https://blogbackend.shinestar.fun/api/**',
+        proxy: 'https://blogapi.shinestar.fun/api/**',
         headers: {
           'Access-Control-Allow-Origin': '*',
           'Access-Control-Allow-Headers': 'Content-Type, Authorization',
@@ -46,10 +46,10 @@ export default defineNuxtConfig({
     },
   },
   tailwindcss: {
-    cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }],
     configPath: 'tailwind.config',
     exposeConfig: {
-      level: 2
+      level: 2,
     },
     config: {},
     viewer: true,
@@ -58,8 +58,9 @@ export default defineNuxtConfig({
     components: {
       map: {
         pre: 'PreMD',
-        code: 'CodeMD'
-      }
-    }
-  }
+        code: 'CodeMD',
+      },
+    },
+  },
 });
+

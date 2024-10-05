@@ -1,15 +1,19 @@
 <script setup lang="ts">
+import { Auth } from '~/composables/user';
+import { onMounted } from 'vue';
 
+onMounted(() => {
+  const auth = Auth('github');
+  auth.useAuth('Token');
+});
 </script>
 <script lang="ts">
 export default {
-  name: "AuthSuccess",
-}
+  name: 'AuthSuccess',
+};
 </script>
 <template>
-<div />
+  <div />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
